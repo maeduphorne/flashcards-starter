@@ -44,7 +44,9 @@ describe('Round', function() {
   // 'Should return the current card being played'
   it('Should return the current card being played', function() {
     round.takeTurn();
-    expect(round.currentCard).to.equal(deck.cards[1])
+    expect(round.currentCard).to.equal(deck.cards[0]);
+    round.takeTurn();
+    expect(round.currentCard).to.equal(deck.cards[1]);
   });
   // 'Should evaluate if a guess is correct and return feedback'
     // check if the incorrect guess is pushed to the array
@@ -55,8 +57,13 @@ describe('Round', function() {
     // expect a return of the string 'Correct!'
     expect(round.takeTurn('function')).to.equal('Incorrect!');
     //and also expect incorrect guess array length to be 1
-    expect(round.incorrectGuesses.length).to.equal(1);
   });
+
+  it('Should add incorrect guesses to the incorrectGuesses array by ID', function() {
+    round.takeTurn("array");
+    // expect(round.incorrectGuesses.length).to.equal(1);
+    expect(round.incorrectGuesses).to.deep.equal([1]);
+  })
   // 'Should store ids of incorrect guesses'
   // 'Should move to the next card when a turn is played'
   // 'Should calculate the percentage of correct guesses and print winnings'
