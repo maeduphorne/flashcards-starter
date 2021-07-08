@@ -67,4 +67,18 @@ describe('Round', function() {
   // 'Should store ids of incorrect guesses'
   // 'Should move to the next card when a turn is played'
   // 'Should calculate the percentage of correct guesses and print winnings'
+
+  it('Should calculate and return the percentage of correct guesses', function() {
+    round.takeTurn('object');
+
+    expect(round.calculatePercentCorrect()).to.equal(100);
+
+    round.takeTurn('function');
+
+    expect(round.calculatePercentCorrect()).to.equal(50);
+
+    round.takeTurn('accessor method');
+
+    expect(round.calculatePercentCorrect()).to.equal(34);
+  })
 })

@@ -29,9 +29,12 @@ class Round {
     // if the guess is evaluated to false, the update the incorrect guesses array and run the return feedback function
   };
 
-  // calculatePercentCorrect() {
-  //
-  // };
+  calculatePercentCorrect() {
+  //**method that calculates and returns the percentage of correct guesses
+  let correctAnswers = this.turns - this.incorrectGuesses.length
+  let percentCorrect = Math.ceil((correctAnswers / this.turns) * 100)
+  return percentCorrect
+  };
 };
 
 module.exports = Round;
