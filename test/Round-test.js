@@ -68,7 +68,7 @@ describe('Round', function() {
   // 'Should move to the next card when a turn is played'
   // 'Should calculate the percentage of correct guesses and print winnings'
 
-  it('Should calculate and return the percentage of correct guesses', function() {
+  it('Should calculate the percentage of correct guesses', function() {
     round.takeTurn('object');
 
     expect(round.calculatePercentCorrect()).to.equal(100);
@@ -80,5 +80,13 @@ describe('Round', function() {
     round.takeTurn('accessor method');
 
     expect(round.calculatePercentCorrect()).to.equal(34);
+  });
+
+  it('Should end round and print a statement with percentage of correct guesses', function() {
+    round.takeTurn('object');
+    round.takeTurn('function');
+    round.takeTurn('accessor method');
+
+    expect(round.endRound()).to.equal(`** Round over! ** You answered 34% of the questions correctly!`)
   })
 })
