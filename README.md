@@ -1,12 +1,12 @@
 # Flashcards
 
 ## Table of Contents
-  - [Abstract](##Abstract)
-  - [Technologies](##Technologies)
-  - [Illustrations](##Illustrations)
-  - [Set Up](##Set-Up)
-  - [Sources](##Sources)
-  - [Project Specs](##Project-Specs)
+  - [Abstract](#Abstract)
+  - [Technologies](#Technologies)
+  - [Illustrations](#Illustrations)
+  - [Set Up](#Set-Up)
+  - [Sources](#Sources)
+  - [Project Specs](#Project-Specs)
 
 ## Abstract
 
