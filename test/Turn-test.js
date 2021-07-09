@@ -1,13 +1,11 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Card = require('../src/Card');
 const Turn = require('../src/Turn');
 
 describe('Turn', function() {
 
   it('Should be a function', function() {
-      const card = new Card(1, 'Which is not a name of Jim O\'heir\'s character in Parks & Recreation?', ['Jerry', 'Larry', 'Terry', 'Barry'], 'Barry');
       expect(Turn).to.be.a('function');
     });
 

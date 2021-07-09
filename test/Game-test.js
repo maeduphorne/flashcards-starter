@@ -1,10 +1,8 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 const Game = require('../src/Game');
 
 describe('Game', function() {
@@ -36,7 +34,7 @@ describe('Game', function() {
 
   it('should start the game', function() {
     expect(game.start).to.be.a('function');
-  })
+  });
 
   it('should create a deck of cards and round to be played', function() {
     game.start();
