@@ -8,6 +8,7 @@ const Turn = require('../src/Turn');
 
 describe('Round', function() {
   let card1, card2, card3;
+  let cards;
   let deck;
   let round;
 
