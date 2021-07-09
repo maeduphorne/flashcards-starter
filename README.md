@@ -14,8 +14,6 @@ Flashcards starter is a simple game that a user can play in their terminal. Ques
 
 ## Technologies
   - Javascript
-  - HTML
-  - CSS
 
 ## Illustrations
 ![recording](https://user-images.githubusercontent.com/63213406/125007559-b0cf9680-e01d-11eb-939b-342d537777da.gif))
