@@ -38,6 +38,7 @@ class Round {
 
   endRound() {
     // prints the following to the console:
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
     return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
 };
